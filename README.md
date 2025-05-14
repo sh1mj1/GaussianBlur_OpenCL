@@ -95,11 +95,15 @@ clean:
 
 ## 성능 비교
 
-연산 종류	CPU 실행 시간(ms)	GPU 실행 시간(ms)	속도 개선
-Gaussian Blur	4028	220	✅ 약 18배 빠름
-Grayscale	-	140	✅ 실시간 가능
-Rotate	-	714	✅ 병렬 수행 가능
+| 기능 | 설명 | 구현 위치 |
+|------|------|------------|
+| 연산 종류 | CPU 실행 시간(ms)| GPU 실행 시간(ms) |속도 개선 |
+|-----------|------|------|------------------|
+| Gaussian Blur | 4028 | 220 | 약 18배 빠름 |
+| Grayscale | -	| 140 | 비슷한 결과 예측됨 |
+| Rotate | - | 714 | 비슷한 결과 예측됨 |
 
+<img width="453" alt="image" src="https://github.com/user-attachments/assets/4b63beb3-cc94-41ca-989b-fc7f558d5514" />
 
 ⸻
 
@@ -122,7 +126,7 @@ project-root/ <br>
 ⸻
 
 #### 회고
-	•	이미지 처리의 병렬성(특히 Gaussian Blur)은 OpenCL을 활용하면 극적인 속도 향상이 가능함을 확인하였습니다.
-	•	EditText → 7Segment, GPIO 제어 등과 함께 실제 디바이스에 적용해볼 수 있는 기반이 되는 프로젝트입니다.
+* 이미지 처리의 병렬성(특히 Gaussian Blur)은 OpenCL을 활용하면 극적인 속도 향상이 가능함을 확인하였습니다.
+* EditText → 7Segment, GPIO 제어 등과 함께 실제 디바이스에 적용해볼 수 있는 기반이 되는 프로젝트입니다.
 
 ---
